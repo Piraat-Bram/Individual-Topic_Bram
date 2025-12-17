@@ -45,6 +45,7 @@ class User extends Authenticatable
             'birthdate' => 'date',
             'locale' => 'string',
             'is_admin' => 'boolean',
+            'show_only_locale_posts' => 'boolean',
         ];
     }
 

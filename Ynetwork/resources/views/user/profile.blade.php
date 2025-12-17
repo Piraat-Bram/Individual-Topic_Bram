@@ -255,10 +255,10 @@
                             return;
                         }
 
-                        let html = `<p><strong>Total unread messages:</strong> ${data.total_unread}</p>`;
+                        let html = `<p><strong>{{ __('Total unread messages:') }}</strong> ${data.total_unread}</p>`;
                         html += '<ul class="w3-ul">';
                         data.senders.forEach(sender => {
-                            html += `<li>${sender.full_name} (${sender.unread_count} unread)</li>`;
+                            html += `<li>${sender.full_name} (${sender.unread_count} {{ __('unread') }})</li>`;
                         });
                         html += '</ul>';
                         summaryContainer.innerHTML = html;

@@ -61,14 +61,18 @@
                     class="w3-border w3-round-large w3-padding-small w3-white w3-margin-bottom" style="resize:none; width:100%; box-sizing:border-box;">{{ $profiledata->bio }}</textarea>
             @endcan
 
-            <!-- Language settings - only editable on your own profile -->
+            <!-- Language settings -->
             @can('update', $profiledata)
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <select id="locale-select" name="locale" class="px-3 py-2 border border-gray-300 rounded bg-white text-gray-700 hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <div class="flex flex-col items-center pt-8 sm:justify-start sm:pt-0">
+                    <select id="locale-select" name="locale" class="px-3 py-2 border border-gray-300 rounded bg-white text-gray-700 hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2">
                         @foreach($available_locales as $locale_name => $available_locale)
                             <option value="{{ $available_locale }}" @selected($available_locale === $current_locale)>{{ $locale_name }}</option>
                         @endforeach
                     </select>
+                    <label class="w3-small w3-text-dark-grey w3-margin-bottom" style="display:flex;align-items:center;gap:8px;">
+                        {{ __('Show only posts from users with my language') }}
+                        <input type="checkbox" name="show_only_locale_posts" id="show_only_locale_posts" value="1" @checked(old('show_only_locale_posts', $profiledata->show_only_locale_posts ?? false))>
+                    </label>
                 </div>
             @else
                 <div class="w3-container w3-small w3-text-dark-grey w3-margin-bottom" style="text-align:center;">

@@ -1,4 +1,65 @@
 {
+    "Ynetwork": "Ynetwork",
+    "Log in": "Einloggen",
+    "Log in to your profile": "In deinen Profil einloggen",
+    "Password": "Passwort",
+    "Reset password": "Passwort zurücksetzen",
+
+    "Register": "Registrieren",
+    "Create new profile": "Neues Profil erstellen",
+    "First name": "Vorname",
+    "Last name": "Nachname",
+    "Confirm email": "E-Mail bestätigen",
+    "Confirm password": "Passwort bestätigen",
+    "You must be at least 18 years old.": "Du musst mindestens 18 Jahre alt sein.",
+    
     "For you page": "Für dich",
-    "Profile": "Profil"
+
+    "Profile": "Profil",
+    "Log out": "Ausloggen",
+    "Search...": "Suchen...",
+
+    "Post title": "Beitragstitel",
+    "What do you wanna post about?": "Worüber möchtest du posten?",
+    "Post": "Stellen",
+    "Your posts": "Deine beiträge",
+    "'s posts": "s beiträge",
+    "Edit Post": "Beitrag bearbeiten",
+    "Edit my post": "Meinen Beitrag bearbeiten",
+    "Update post": "Beitrag aktualisieren",
+
+    "Chats": "Chats",
+    "Loading...": "Laden...",
+    "No unread messages.": "Keine ungelesenen Nachrichten.",
+    "Total unread messages:": "Insgesamt ungelesene Nachrichten:",
+    "unread": "ungelesen",
+    "Failed to load unread messages.": "Konnte ungelesene Nachrichten nicht laden.",
+    "Chat": "Chat",
+    "Messages": "Nachrichten",
+    "Type a message...": "Nachricht eingeben...",
+    "Send": "Senden",
+
+    "Friend requests": "Freundschaftsanfragen",
+    "Accept": "Akzeptieren",
+    "Deny": "Ablehnen",
+    "No friend requests at the moment.": "Keine Freundschaftsanfragen zum Moment.",
+    "Friends": "Freunde",
+    "No friends yet.": "Noch keine Freunde.",
+    "Unfriend": "Freund entfernen",
+    "Accept friend request": "Freundschaftsanfrage akzeptieren",
+    "Request sent": "Anfrage gesendet",
+    "Add friend": "Freund hinzufügen",
+
+    "Submit": "Absenden",
+    "Language:": "Sprache:",
+    "Show only posts from users with my language": "Nur Beiträge von Benutzern mit meiner Sprache anzeigen",
+    "Email": "E-Mail",
+    "Birthday:": "Geburtstag:",
+    "Joined on:": "Beigetreten am:",
+    "Save": "Speichern",
+    "Delete this profile": "Dieses Profil löschen",
+    "Are you sure you want to delete this profile?": "Bist du sicher, dass du dieses Profil löschen möchtest?",
+    "Are you sure you want to delete this post?": "Bist du sicher, dass du diesen Beitrag löschen möchtest?",
+
+    "2025 Ynetwork | Contact: y@network.com": "2025 Ynetwork | Kontakt: y@network.com"
 }

@@ -17,7 +17,16 @@ class PostController extends Controller
      */
     public function foryou()
     {
-        $posts = Post::all()->sortByDesc('updated_at');
+        $currentUser = Auth::user();
+        if ($currentUser->show_only_locale_posts) {
+            $userLocale = $currentUser->locale;
+            // Only show posts from users with the same locale
+            $posts = Post::whereHas('user', function ($query) use ($userLocale) {
+                $query->where('locale', $userLocale);
+            })->orderByDesc('updated_at')->get();
+        } else {
+            $posts = Post::orderByDesc('updated_at')->get();
+        }
         return view('user.for-you', compact('posts'));
     }
 

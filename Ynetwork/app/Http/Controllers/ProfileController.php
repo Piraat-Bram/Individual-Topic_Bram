@@ -44,14 +44,16 @@ class ProfileController extends Controller
             'email' => ['required', 'string', 'email', 'max:255'],
             'bio' => ['nullable', 'string'],
             'locale' => ['nullable', 'string', 'in:' . implode(',', array_values(config('app.available_locales')))],
+            'show_only_locale_posts' => ['nullable', 'boolean'],
         ]);
 
         $user->email = $validated['email'];
         $user->bio   = $validated['bio'];
-        
         if ($request->has('locale') && $validated['locale']) {
             $user->locale = $validated['locale'];
         }
+        // Save the toggle for showing only locale posts
+        $user->show_only_locale_posts = $request->has('show_only_locale_posts') ? true : false;
 
         $user->save();
 
