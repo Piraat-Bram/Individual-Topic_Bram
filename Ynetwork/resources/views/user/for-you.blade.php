@@ -118,4 +118,10 @@
     <p>&copy; {{ __('2025 Ynetwork | Contact: y@network.com') }}</p>
 </footer>
 
+<!-- Finding locale based on browser locale-->
+    <script>
+        document.documentElement.setAttribute('data-locale', '{{ session("locale") }}');
+    </script>
+    <script src="{{ asset('js/browser-locale-detection.js') }}"></script>
+
 </html>
